@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>RESPONSIVE GALLERY</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1,0">
+        <style>
+
+            
+            #container{
+                width: 960px;
+                max-width: 90%;
+                margin: 0 auto;
+                border: 1px dashed;
+            }
+            #row{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: start;
+            }
+          
+                
+            
+            .photo{
+                width: 120px;
+                height: 120px;
+                border: 1px solid gray;
+                border-radius: 5%;
+                margin: 20px;
+                text-align: center;
+                font-size: 12px;
+                color: gray;
+                flex-basis: 15%;
+                background:linear-gradient(blue 82%,white 18%)
+                
+            }
+            img.product {
+                width: 100%;
+                max-width: 120px;
+            }
+            .photo>:last-child {
+                display: inline;
+            }
+            .lorem{
+                margin: 0 120px 0 20px;
+            }
+            body>:last-child {
+                color:gray;
+
+            }
+            h2{
+                color: gray;
+            }
+            @media screen and (max-width: 1024px) {
+                .photo
+                .lorem{
+                flex-basis: 33,33%;
+                }
+            }
+             @media screen and (max-width: 768px) {
+                 .photo
+                 .lorem{
+                     flex-basis: 50%;
+                 }
+             }
+             @media screen and(max-width: 414px) {
+                 .photo
+                 .lorem{
+                     flex-basis: 100%;
+                 }
+             }
+             
+          
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <h2>Gallery Heading</h2>
+            <div id="row">
+           
+            <div class="photo"> <img src="placeholder-image.png" alt="demo picture" height="100px" >
+             <p>image title</p> 
+            </div>
+            <div class="photo"><img src="placeholder-image.png" alt="demo picture" height="100px">
+            <p>image title</p>
+            </div>
+            <div class="photo"><img src="placeholder-image.png" alt="demo picture" height="100px">
+            <p>image title</p>
+            </div>
+            <div class="photo"><img src="placeholder-image.png" alt="demo picture" height="100px">
+            <p>image title</p>
+            </div>
+            <div class="photo"><img src="placeholder-image.png" alt="demo picture" height="100px">
+            <p>image title</p>
+            </div>
+            <div class="photo"><img src="placeholder-image.png" alt="demo picture" height="100px">
+            <p>image title</p>
+            </div>
+            <div class="photo"><img src="placeholder-image.png" alt="demo picture" height="100px">
+            <p>image title</p>
+            </div>
+            <div class="photo"><img src="placeholder-image.png" alt="demo picture" height="100px">
+            <p>image title</p>
+            </div>
+            <div class="photo"><img src="placeholder-image.png" alt="demo picture" height="100px">
+            <p>image title</p> 
+            </div>
+            <div class="photo"><img src="placeholder-image.png" alt="demo picture" height="100px">
+            <p>image title</p>
+            </div>
+
+           
+          <div class="lorem">
+              <p>Lorem ispsum dolor sit  amet,consectetur adipiscing elit.
+                  Cras a lacinia nisi,nec tristique sem.Cras id tellus ac
+                  mauris posuere varius.Pellentesqeee vel mi justo.Aenean malesuada purus
+                  purus eu lacina finibus.Praesent commodo euismod odio.eu pharetra nulla
+                  dignissim nec. id nulla augue.Duis ultricies euismod purus,ut
+                  lobortis tortor semper a. Nam eleifend accumsan elit,in eče,entum lacus.
+                  Nunc varius imperdiet nisi,eget pretium augue molestic a.Nullam ut
+                  malesuada enim.Integer non velit fringilia,porta ex vitae,porttitor velit.
+                  Ut luctus lacinia libero a scelerisque.Ut uilamcorper arcu mauris uilamcorper
+                  tempor.
+                </p>
+          </div>
+            </div>
+        </div>
+        
+        
+    </body>
+</html>
